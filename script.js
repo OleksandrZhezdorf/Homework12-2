@@ -20,7 +20,7 @@ console.log(copyItems)
 
 
 function mapExample(arr, callback) {
-    results = [];
+    let results = [];
     for (i = 0; i < arr.length; i++) {
         results.push(callback(arr[i]));
     }
@@ -40,7 +40,7 @@ console.log(mapResult);
 
 
 var filterExample = function (arr, callback) {
-    results = [];
+    let results = [];
     for (i = 0; i < arr.length; i++) {
         if (callback(arr[i])) {
             results.push(arr[i]);
